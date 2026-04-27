@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  web:
+    build: ./docker
+    # container_name: php74_app
+    #container_name: php82_app
+    ports:
+      - "8005:80"
+    volumes:
+      - ./testando_php:/var/www/html
+    depends_on:
+      - db
+    networks:
+            - testando_php
+  db:
+    image: mysql:5.7
+    #container_name: mysql57_app
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dbkprev
+      MYSQL_USER: sistema
+      MYSQL_PASSWORD: sistema
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    networks:
+            - testando_php
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    #container_name: phpmyadmin_app
+    restart: always
+    ports:
+      - "8060:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    depends_on:
+      - db
+    networks:
+            - testando_php
+networks:
+    testando_php:
+        driver: bridge
+
