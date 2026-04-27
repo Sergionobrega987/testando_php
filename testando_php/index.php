@@ -18,4 +18,3 @@ include './sistema/Nucleo/Mensagem.php';
 
 // var_dump($msg);
 echo "<h2> ola mundo";
-echo "<p> esse e a ultima linha commitada";
