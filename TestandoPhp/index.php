@@ -2,25 +2,29 @@
      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
  <?php 
+// namespace TestandoPhp\sistema\Nucleo;
 
-// declare(strict_types=1);
 require_once 'sistema/configuracao.php';
+use TestandoPhp\sistema\Nucleo\Mensagem;
 include 'helpers.php';
-include './sistema/Nucleo/Mensagem.php';
+// include './sistema/Nucleo/Mensagem.php';
 include './sistema/Nucleo/PintarCarro.php';
 
+// use TestandoPhp\sistema\Nucleo\Mensagem;
 
 // $msg = new Mesagem();
 
 // echo $msg->sucesso();
 // echo '<hr>';
-echo (new Mensagem())->erro("esse e o metodo magico");
-
-
+// echo (new Mensagem())->erro("esse e o metodo magico");
+// echo ( Mensagem->erro("esse e um namespace"));
+// echo (new Mensagem())->erro("esse e o metodo magico");
+echo (new Mensagem())->erro("isso e um namespace");
+// echo  (new Mensagem)
 // var_dump($msg);
-$msg = new Mensagem();
-echo $msg->sucesso('ola mundo')
-    ->renderizar();
+// $msg = new Mensagem();
+// echo $msg->sucesso('ola mundo')
+//     ->renderizar();
 
 
 // echo (new Mensagem())->erro('mensagem de erro')->renderizar();
