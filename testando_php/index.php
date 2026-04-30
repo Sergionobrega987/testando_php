@@ -14,7 +14,7 @@ include './sistema/Nucleo/PintarCarro.php';
 
 // echo $msg->sucesso();
 // echo '<hr>';
-
+echo (new Mensagem())->erro("esse e o metodo magico");
 
 
 // var_dump($msg);
@@ -22,10 +22,13 @@ $msg = new Mensagem();
 echo $msg->sucesso('ola mundo')
     ->renderizar();
 
-echo "<div class='alert alert-primary'>ola</div>";
 
-$pintaCarro = new PintarCarro();
+// echo (new Mensagem())->erro('mensagem de erro')->renderizar();
 
-$carro = $pintaCarro->escolhaCarro("amarelo","corsa",2022)->construirCarro();
+// echo "<div class='alert alert-primary'>ola</div>";
 
-echo $carro;
+// $pintaCarro = new PintarCarro();
+
+// $carro = $pintaCarro->escolhaCarro("amarelo","corsa",2022)->construirCarro();
+
+// echo $carro;
