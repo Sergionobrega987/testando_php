@@ -9,17 +9,15 @@
 /**
  * isso e uma documentaçao
  */
-class Mesagem{
+class Mensagem{
     private $texto;
     private $css;
 
-    public function sucesso():string
-    {
+    public function  sucesso(string $mensagem) : Mensagem {
 
-        $this->css= 'alert alert-sucess';
-        $this->texto =$this->filtrar("ola mundo");
+        $this->css = 'alert alert-success';
+        $this->texto = $this->filtrar($mensagem); 
         return $this;
-
     }
 
     public function renderizar():string

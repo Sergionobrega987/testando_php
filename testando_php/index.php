@@ -7,6 +7,7 @@
 require_once 'sistema/configuracao.php';
 include 'helpers.php';
 include './sistema/Nucleo/Mensagem.php';
+include './sistema/Nucleo/PintarCarro.php';
 
 
 // $msg = new Mesagem();
@@ -17,4 +18,14 @@ include './sistema/Nucleo/Mensagem.php';
 
 
 // var_dump($msg);
-echo "<h2> ola mundo";
+$msg = new Mensagem();
+echo $msg->sucesso('ola mundo')
+    ->renderizar();
+
+echo "<div class='alert alert-primary'>ola</div>";
+
+$pintaCarro = new PintarCarro();
+
+$carro = $pintaCarro->escolhaCarro("amarelo","corsa",2022)->construirCarro();
+
+echo $carro;
