@@ -5,7 +5,7 @@
 // namespace TestandoPhp\sistema\Nucleo;
 
 require_once 'sistema/configuracao.php';
-use TestandoPhp\sistema\Nucleo\Mensagem;
+
 include 'helpers.php';
 // include './sistema/Nucleo/Mensagem.php';
 include './sistema/Nucleo/PintarCarro.php';
@@ -13,13 +13,13 @@ include './sistema/Nucleo/PintarCarro.php';
 // use TestandoPhp\sistema\Nucleo\Mensagem;
 
 // $msg = new Mesagem();
-
+echo 'mensgem';
 // echo $msg->sucesso();
 // echo '<hr>';
 // echo (new Mensagem())->erro("esse e o metodo magico");
 // echo ( Mensagem->erro("esse e um namespace"));
 // echo (new Mensagem())->erro("esse e o metodo magico");
-echo (new Mensagem())->erro("isso e um namespace");
+// echo (new \TestandoPhp\sistema\Nucleo\Mensagem)->erro("isso e um namespace");
 // echo  (new Mensagem)
 // var_dump($msg);
 // $msg = new Mensagem();
