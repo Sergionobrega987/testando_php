@@ -1,5 +1,7 @@
 <?php
-namespace TestandoPhp\sistema\Nucleo;
+namespace sistema\nucleo;
+
+
 /**
  * essa classe e um teste do curso php na web
  * autor sergio.

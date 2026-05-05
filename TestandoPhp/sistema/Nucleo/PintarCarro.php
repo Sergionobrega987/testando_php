@@ -1,4 +1,5 @@
 <?php
+namespace sistema\nucleo;
 
 class PintarCarro
 {
@@ -6,6 +7,7 @@ class PintarCarro
 private  $cor;
 private  $modelo;
 private $ano;
+private $texto;
 
 
 public function escolhaCarro(string $cor,string $modelo, string $ano):PintarCarro{
@@ -28,6 +30,12 @@ public function construirCarro(){
     return $carro;
 }
 
+
+
+public function colocarTextoMaiuscula(string $texto){
+    $textoMaiscula = mb_strtoupper($texto, 'UTF-8');
+    return $textoMaiscula;
+}
 
 
 
