@@ -1,0 +1,24 @@
+{
+    "name": "sergio/desenvolvimento-php",
+    "description": "desenvolvedor php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "sistema\\": "sistema/"
+        },
+        "files":["sistema/configuracao.php"]
+    },
+    "authors": [
+        {
+            "name": "sergio",
+            "email": "nobreg@bol.com.br",
+            "homepage": "https://www.teste",
+            "role": "Developer" 
+        }
+        
+    ],
+    "require": {
+        "php": ">=8.0",
+        "jeffersoncechinel/php-brdocs": "^1.0"
+    }
+}

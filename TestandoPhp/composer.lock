@@ -1,0 +1,78 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ef225b0fdcf3838b8acef3448f9f9718",
+    "packages": [
+        {
+            "name": "jeffersoncechinel/php-brdocs",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffersoncechinel/php-brdocs.git",
+                "reference": "46b2b4520ad907696e1531440ad6b0de9255c341"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffersoncechinel/php-brdocs/zipball/46b2b4520ad907696e1531440ad6b0de9255c341",
+                "reference": "46b2b4520ad907696e1531440ad6b0de9255c341",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tests\\": "tests/",
+                    "JC\\BrDocs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Cechinel",
+                    "email": "jclorets@hotmail.com",
+                    "homepage": "http://www.jeffersoncechinel.com",
+                    "role": "Creator"
+                }
+            ],
+            "description": "PHP BrDocs auxilia na validação e formatação de documentos brasileiros como CPF e CNPJ",
+            "keywords": [
+                "Validar CPF",
+                "cnpj",
+                "cnpj validator",
+                "cpf",
+                "cpf validator",
+                "formatar cnpj",
+                "formatar cpf",
+                "validar cnpj"
+            ],
+            "support": {
+                "issues": "https://github.com/jeffersoncechinel/php-brdocs/issues",
+                "source": "https://github.com/jeffersoncechinel/php-brdocs/tree/1.0.3"
+            },
+            "time": "2022-01-09T15:05:26+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.0"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

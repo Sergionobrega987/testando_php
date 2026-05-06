@@ -74,7 +74,7 @@ class Helpers
                     $saudacao ="boa Tarde";
                 break; 
                 default:
-                    $saudacao ="noite";
+                    $saudacao ="boa noite";
                     break;
             }
 
