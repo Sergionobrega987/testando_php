@@ -1,3 +1,5 @@
 docker-compose.yml
 docker
-testando_php/crud/conexao.php
+TestandoPhp/crud/conexao.php
+#vendor
+TestandoPhp/vendor/
