@@ -2,6 +2,8 @@
 
 namespace sistema\nucleo;
 
+use Exception;
+
 class Helpers
 {
     // public static function validarCPF(string $cnpj): bool{
@@ -60,7 +62,7 @@ class Helpers
     public static function saudacao():string
     {
         date_default_timezone_set('America/Sao_Paulo');
-        echo date("H") . "<hr>";
+        // echo date("H") . "<hr>";
             $hora = date("H");
         
             switch ($hora){
@@ -112,7 +114,7 @@ class Helpers
         $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
         $ambiente = ($servidor == 'localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
 
-
+                    
         if(str_starts_with($url, '/')){
             return $ambiente.$url;
         }
