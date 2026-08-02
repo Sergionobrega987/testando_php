@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-<div class="container my-5">
-    <h1> {{ 'index'|upper }}</h1>
+<div class="row">
+     {% for post in posts%}     
+        <div class="col-md-3">     
+            <div class="card m-4">
+                <div class="card-body">
+                    <h5 class="card-title">{{post.titulo}}</h5>
+                        <p class="card-text">{{post.texto}}</p>
+                
+                </div>
+            </div>
+            
+        </div>  
+     {%endfor%}
 </div>
 {% endblock %}

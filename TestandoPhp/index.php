@@ -10,14 +10,14 @@ use sistema\Modelo\PostsModelo;
 // use sistema\Nucleo\Conexao;
 
 // $con = Conexao::getInstacia();
-$postModelo = new PostsModelo();
-$posts = $postModelo->ler();
+// $postModelo = new PostsModelo();
+// $posts = $postModelo->ler();
 
 
-foreach ($posts as $post){
-     echo $post->titulo . '<br>';
+// foreach ($posts as $post){
+//      echo $post->titulo . '<br>';
 
-}
+// }
 // $postsJson = json_encode($posts);
 // var_dump("esta e uma variavel interpolada {$postsJson}");
 

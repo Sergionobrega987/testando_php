@@ -3,6 +3,7 @@
 namespace sistema\Controlador;
 
 use sistema\Nucleo\Controlador;
+use sistema\Modelo\PostsModelo;
 
 class SiteControlador extends Controlador
 {
@@ -14,10 +15,12 @@ class SiteControlador extends Controlador
     }
 
     public function index() :void{
+        $posts = (new PostsModelo())->ler();
+
+        
         echo  $this->template->renderizar
         ('index.html',[
-            'titulo'=>'Essa e a Página Inicial',
-            'subtitulo'=> 'teste de subtitulo'
+            'posts' =>$posts,
         ]);
        
     }
